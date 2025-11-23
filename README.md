@@ -1,6 +1,3 @@
-# bioinformatics-portfolio
-A professional portfolio showcasing robust computational pipelines and data analysis projects in Omics and machine learning.
-
 # Bioinformatics Portfolio
 
 Welcome! My name is **Michael Aderibigbe Arowosegbe**, and I am a 5th-year Ph.D. student in Pharmacology & Toxicology at the University of Arizona.  

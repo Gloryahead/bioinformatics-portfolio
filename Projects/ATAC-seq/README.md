@@ -53,7 +53,6 @@ cores=12  # Adjust based on SLURM allocation
 ## 📂 Directory Output Structure
 The pipeline organizes inputs and outputs into a strict hierarchy to ensure reproducibility:
 
-```text
 project_root/
 ├── qc_raw_reads/       # FastQC reports
 ├── trimmed_fastq/      # Cleaned reads

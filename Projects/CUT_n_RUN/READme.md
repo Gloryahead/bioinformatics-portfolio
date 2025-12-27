@@ -49,7 +49,6 @@ This project is part of a larger portfolio. To download and set up this specific
 ## 📂 Directory Output Structure
 The pipeline organizes inputs and outputs into a strict hierarchy to ensure reproducibility:
 
-```text
 Project_Root/
 ├── bam/
 │   ├── filtered_blacklist/  # Final analysis-ready BAMs

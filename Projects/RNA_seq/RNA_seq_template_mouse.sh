@@ -56,10 +56,10 @@ set -e
 
 # --- Configuration Variables ---
 # Define base directory for the project
-base_dir="/xdisk/clsmith1/maarowosegbe/RNA-seq/Test_120525"
+base_dir="/path/to/project"
 
 # Genome and Annotation references
-mm10_genome_dir="/xdisk/clsmith1/maarowosegbe/RNA-seq/STAR_mm10_dir"
+mm10_genome_dir="/path/to/project"
 STAR_index="$mm10_genome_dir/genomeIndex"
 mm10_fasta="$mm10_genome_dir/GRCm38.primary_assembly.genome.fa"
 gene_annotation="$mm10_genome_dir/GRCm38_annot.gff3" # Renamed for clarity and consistency

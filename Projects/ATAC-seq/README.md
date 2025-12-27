@@ -45,6 +45,20 @@ Edit the `Configuration` section at the top of the script to set your file paths
 
 ```bash
 
-# Define your project base directory
+
+## Define your project base directory
 base_dir="/path/to/your/project"
 cores=12  # Adjust based on SLURM allocation
+
+## 📂 Directory Output Structure
+The pipeline organizes inputs and outputs into a strict hierarchy to ensure reproducibility:
+
+```text
+project_root/
+├── qc_raw_reads/       # FastQC reports
+├── trimmed_fastq/      # Cleaned reads
+├── bam/                # Aligned & Filtered BAMs
+├── bigwig/             # Visualization tracks (.bw)
+├── MACS2/              # Peak calls
+├── HOMER/              # Annotated peaks & Motifs
+└── visualization/      # Ready-to-load BED files for IGV/UCSC

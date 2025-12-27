@@ -56,10 +56,10 @@ set -e
 
 # --- Configuration Variables ---
 # Define base directory for the project
-base_dir="/xdisk/clsmith1/maarowosegbe/RNA-seq/MTA1_KD"
+base_dir="/path/to/project"
 
 # Genome and Annotation references
-hg38_genome_dir="/xdisk/clsmith1/maarowosegbe/RNA-seq/HDAC1_KD/fastq_GSE179882/hg38_dir"
+hg38_genome_dir="/path/to/genome"
 STAR_index="$hg38_genome_dir/genomeIndex"
 hg38_fasta="$hg38_genome_dir/Homo_sapiens.GRCh38.dna.primary_assembly.fa"
 gene_annotation="$hg38_genome_dir/h_sapiens.gff3" # Renamed for clarity and consistency

@@ -45,3 +45,18 @@ This project is part of a larger portfolio. To download and set up this specific
    ```bash
    git clone [https://github.com/Gloryahead/bioinformatics-portfolio.git](https://github.com/Gloryahead/bioinformatics-portfolio.git)
    cd bioinformatics-portfolio/Projects/CUT_n_RUN
+
+## 📂 Directory Output Structure
+The pipeline organizes inputs and outputs into a strict hierarchy to ensure reproducibility:
+
+```text
+Project_Root/
+├── bam/
+│   ├── filtered_blacklist/  # Final analysis-ready BAMs
+├── bigwig/                  # Scaled .bw tracks
+├── MACS2/                   # .narrowPeak and .broadPeak files
+├── HOMER/
+│   ├── motifs/              # De novo motif results
+│   ├── super_enhancers/     # ROSE/SE output
+│   └── UCSC_Hub_Files/      # Ready for S3 upload
+└── qc_reports/              # MultiQC HTML reports

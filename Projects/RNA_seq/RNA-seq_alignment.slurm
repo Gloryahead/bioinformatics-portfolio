@@ -10,7 +10,7 @@
 ### SLURM reads %x as the job name and %j as the job ID
 #SBATCH --output=%x-%j.out
 ### REQUIRED. Specify the PI group for this job. Replace <PI GROUP> with your own group.
-#SBATCH --account=clsmith1
+#SBATCH --account=your_account
 ### REQUIRED. Set the partition for your job. This is a job queue
 #SBATCH --partition=standard
 ### REQUIRED. Set the number of nodes
@@ -31,7 +31,7 @@ echo "========== Job started at: $(date) =========="
 # Activate conda environment
 source ~/.bashrc
 eval "$(micromamba shell hook --shell=bash)"
-micromamba activate RNA-seq
+micromamba activate Your_env
 
 # Load required modules
 module load star/2.7.11b

@@ -3,15 +3,15 @@
 cores=12
 
 # Define base directory for the project
-base_dir="/xdisk/clsmith1/maarowosegbe/ATAC-seq/Hepa1C1C7"
+base_dir="/your/cluster/path/project_name"
 echo "Project Base Directory: $base_dir"
 
 # --- Genome and Annotation References ---
-mm10_ref="/xdisk/clsmith1/maarowosegbe/mm10_index/mm10"      # Bowtie2 index
-mm10_genome_dir="/xdisk/clsmith1/maarowosegbe/CUTnRUN_6n7/mm10"
+mm10_ref="/path/to/your/bowtie2/genome_index"      # Bowtie2 index
+mm10_genome_dir="/path/to/your/genome"
 genome_size="$mm10_genome_dir/mm10.chrom.sizes"
 mm10_fa="$mm10_genome_dir/mm10.fa"
-blacklist_bed="/xdisk/clsmith1/maarowosegbe/ENCODE_DAC/mm10-blacklist.v2.bed"
+blacklist_bed="/path/to/your/blacklist_file/mm10-blacklist.v2.bed" # change mm10-blacklist.v2.bed to your preferred genome blacklist
 GENOME_VERSION="mm10" # Mus musculus genome
 
 # --- Temp Directory Setup ---

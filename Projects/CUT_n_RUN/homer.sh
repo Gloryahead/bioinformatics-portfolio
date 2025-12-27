@@ -8,11 +8,11 @@
 
 # --- Configuration & Paths ---
 cores=8
-GENOME_VERSION="/groups/clsmith1/maarowosegbe/micromamba/envs/CUT_n_RUN_env/bin/data/genomes/mm10" # Mus musculus genome
+GENOME_VERSION="mm10" # Mus musculus genome
 NORMALIZATION_FACTOR="1e7" # 10 million tags for normalization
 
 # --- Project Paths ---
-base_dir="/xdisk/clsmith1/maarowosegbe/CR12_13_15"
+base_dir="/your/cluster/path/project_name"
 filtered_bam_files="$base_dir/bam/filtered_blacklist"
 
 # Output Directories
@@ -28,7 +28,7 @@ multi_overlap_out="$homer_base/multi_factor_overlap"
 # PHASE 9: UCSC Hub Configuration
 # SETTING USER-PROVIDED S3 ENDPOINT URL:
 HUB_WEB_DIR="$homer_base/UCSC_Hub_Files"
-HUB_URL="http://maa-genomics-hub-2025.s3-website.us-east-2.amazonaws.com" 
+HUB_URL="http://your_url"  # Change to your URL (AWS S3 bucket for instance)
 
 mkdir -p "$tag_dirs" "$peaks_out" "$motif_out" "$se_out" "$annotation_out" "$overlap_out" "$multi_overlap_out" "$HUB_WEB_DIR"
 echo "Output directories created. Hub web directory placeholder: $HUB_WEB_DIR"

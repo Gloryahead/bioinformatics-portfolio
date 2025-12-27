@@ -10,7 +10,7 @@
 cores=8
 
 # --- Project Paths (Based on user input) ---
-base_dir="/xdisk/clsmith1/maarowosegbe/CR12_13_15" 
+base_dir="/path/to/project" 
 # NOTE: Ensure all BAM files for all samples are located here:
 filtered_bam_files="$base_dir/bam/filtered_blacklist"
 

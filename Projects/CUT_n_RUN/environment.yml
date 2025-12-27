@@ -34,5 +34,4 @@ dependencies:
   - gocommands
   - ucsc-bedgraphtobigwig
   
-  # Note: STAR is an RNA-Seq aligner and not needed for a standard CUT&RUN workflow.
-  # - star
+

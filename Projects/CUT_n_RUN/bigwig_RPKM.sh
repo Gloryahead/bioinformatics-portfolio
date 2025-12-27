@@ -9,7 +9,7 @@ core=8
 cores=8 
 
 # Define base directory for the project
-base_dir="/xdisk/clsmith1/maarowosegbe/CR12_13_15"
+base_dir="/your/cluster/path/project_name"
 echo "Project Base Directory: $base_dir"
 
 # --- Define Required Paths (CRITICAL: These were missing from your snippet) ---

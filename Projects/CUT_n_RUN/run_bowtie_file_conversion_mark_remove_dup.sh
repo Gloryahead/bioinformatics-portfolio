@@ -5,21 +5,20 @@
 # ==============================================================================
 
 # --- Configuration ---
-core=8
-cores=8 # Use 'cores' consistently for clarity in Bowtie2 commands
+cores=8 # Change to fit your computing needs
 binLen=500
 
 # Define base directory for the project
-base_dir="/xdisk/clsmith1/maarowosegbe/CR12_13_15"
+base_dir="/your/cluster/path/project_name"
 echo "Project Base Directory: $base_dir"
 
 # --- Genome and Annotation References ---
-ecoli_ref="/xdisk/clsmith1/maarowosegbe/Ecoli_index/Ecoli"   # Bowtie2 index for E. coli
-mm10_ref="/xdisk/clsmith1/maarowosegbe/mm10_index/mm10"     # Bowtie2 index for mm10
-mm10_genome_dir="/xdisk/clsmith1/maarowosegbe/CUTnRUN_6n7/mm10"
+ecoli_ref="/path/to/ecoli_index"   # Bowtie2 index for E. coli
+mm10_ref="/path/to/mm10_index"     # Bowtie2 index for mm10
+mm10_genome_dir="/path/to/genome"
 genome_size="$mm10_genome_dir/mm10.chrom.sizes"
 mm10_fa="$mm10_genome_dir/mm10.fa"
-blacklist_bed="/xdisk/clsmith1/maarowosegbe/ENCODE_DAC/mm10-blacklist.v2.bed"
+blacklist_bed="/path/to/the/black_list_file/mm10-blacklist.v2.bed"
 
 # --- Temp Directory Setup (CRITICAL FIX for I/O Stability) ---
 # Use dedicated scratch paths for large temporary file operations

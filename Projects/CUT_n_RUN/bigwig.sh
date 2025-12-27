@@ -6,11 +6,10 @@
 # ==============================================================================
 
 # --- Configuration ---
-core=8
 cores=8 
 
 # Define base directory for the project
-base_dir="/xdisk/clsmith1/maarowosegbe/CR12_13_15"
+base_dir="/your/cluster/path/project_name"
 echo "Project Base Directory: $base_dir"
 
 # --- Define Required Paths (CRITICAL: These were missing from your snippet) ---
@@ -19,7 +18,7 @@ bigwig_file="$base_dir/bigwig"
 sam_ecoli_sum="$base_dir/sam_ecoli/sam_ecoli_summary" 
 sam_mm10_sum="$base_dir/sam_mm10/sam_mm10_summary"
 filtered_bam_files="$base_dir/bam/filtered_blacklist"
-genome_size="/xdisk/clsmith1/maarowosegbe/CUTnRUN_6n7/mm10/mm10.chrom.sizes" # Assuming static path
+genome_size="/path/to/your/genome_size/mm10.chrom.sizes" # Assuming static path
 
 # BigWig output paths
 bigwig_bin_10="$bigwig_file/bigwig_bin_10" 
